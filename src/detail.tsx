@@ -59,6 +59,14 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose }) => {
       >
         <li className="isolate mb-4">
           <div className="rounded-lg bg-slate-200 font-bold">
+            Name
+          </div>
+          <div>
+            {target.name}
+          </div>
+        </li>
+        <li className="isolate mb-4">
+          <div className="rounded-lg bg-slate-200 font-bold">
             <b>Author</b>
           </div>
           <div>
