@@ -8,7 +8,7 @@ export type GalleryProps = {
 
 export const Gallery: React.FC<GalleryProps> = ({ onSelect }) => {
   return (
-    <div className="flex flex-wrap gap-4">
+    <div className="flex flex-wrap gap-4 justify-center">
       {costumes.map((costume) => (
         <Photo
           key={costume.id}
