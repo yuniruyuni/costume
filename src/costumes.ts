@@ -28,7 +28,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     id: "ms03",
     name: "星宮仕えの天使さん",
     author: "みさくらやさん",
-    booth: "https://booth.pm/ja/items/5646504",
+    booth: "https://booth.pm/ja/items/5054313",
     comment:
       "「宇宙におわす女神様に仕える天使をイメージした衣装」らしいです。かわいい！",
   },
@@ -105,7 +105,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     id: "night_in_yoshiwara",
     name: "ナイト・イン・ヨシワラ",
     author: "©Vagrant",
-    booth: "https://booth.pm/ja/items/",
+    booth: "https://booth.pm/ja/items/5359699",
     comment: "とてもセクシーなアバター衣装です✨️",
   },
   {
