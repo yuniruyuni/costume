@@ -10,21 +10,31 @@ const CopyButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
   <button
     type="button"
     onClick={onClick}
-    className={
-      clsx(
-        "relative",
-        "ml-1",
-        "top-1",
-        "bg-blue-400 rounded-md p-1",
-        "inline-flex items-center justify-center",
-        "hover:bg-blue-300",
-        "focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500",
-      )}
+    className={clsx(
+      "relative",
+      "ml-1",
+      "top-1",
+      "bg-blue-400 rounded-md p-1",
+      "inline-flex items-center justify-center",
+      "hover:bg-blue-300",
+      "focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500",
+    )}
+  >
+    <span className="sr-only">Copy</span>
+    <svg
+      className="h-4 w-4 text-white"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      aria-hidden="true"
     >
-      <span className="sr-only">Copy</span>
-      <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>
-      </svg>
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"
+      />
+    </svg>
   </button>
 );
 
@@ -32,22 +42,32 @@ const CloseButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
   <button
     type="button"
     onClick={onClick}
-    className={
-      clsx(
-        "absolute top-0 right-0 z-30",
-        "bg-white rounded-md p-2",
-        "inline-flex items-center justify-center",
-        "text-gray-400 hover:text-gray-500 hover:bg-gray-100",
-        "focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500",
-      )}
-    >
+    className={clsx(
+      "absolute top-0 right-0 z-30",
+      "bg-white rounded-md p-2",
+      "inline-flex items-center justify-center",
+      "text-gray-400 hover:text-gray-500 hover:bg-gray-100",
+      "focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500",
+    )}
+  >
     <span className="sr-only">Close</span>
-    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    <svg
+      className="h-6 w-6"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      aria-hidden="true"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M6 18L18 6M6 6l12 12"
+      />
     </svg>
   </button>
 );
-
 
 const PreviousButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
   <button
@@ -76,7 +96,12 @@ export type DetailProps = {
   onPrevious: () => void;
 };
 
-export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevious }) => {
+export const Detail: React.FC<DetailProps> = ({
+  target,
+  onClose,
+  onNext,
+  onPrevious,
+}) => {
   if (!target) return undefined;
 
   return (
@@ -95,13 +120,13 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevi
     >
       <CloseButton onClick={onClose} />
       <div
-          className={clsx(
-            "relative",
-            "w-full max-w-full",
-            "h-full max-h-full",
-            "col-span-1 row-span-8",
-            "sm:col-span-8 sm:row-span-1",
-          )}
+        className={clsx(
+          "relative",
+          "w-full max-w-full",
+          "h-full max-h-full",
+          "col-span-1 row-span-8",
+          "sm:col-span-8 sm:row-span-1",
+        )}
       >
         <PreviousButton onClick={onPrevious} />
         <img
@@ -133,11 +158,10 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevi
         )}
       >
         <li className="isolate mb-4">
-          <div className="rounded-lg bg-slate-200 font-bold">
-            Name
-          </div>
+          <div className="rounded-lg bg-slate-200 font-bold">Name</div>
           <div>
-            {target.name} <CopyButton onClick={() => copyToClipboard(target.name)} />
+            {target.name}{" "}
+            <CopyButton onClick={() => copyToClipboard(target.name)} />
           </div>
         </li>
         <li className="isolate mb-4">
@@ -157,13 +181,10 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevi
           </div>
         </li>
         <li className="isolate">
-          <div className="rounded-lg bg-slate-200 font-bold">
-            Comment
-          </div>
+          <div className="rounded-lg bg-slate-200 font-bold">Comment</div>
           <div>{target.comment}</div>
         </li>
       </ul>
     </button>
   );
 };
-
