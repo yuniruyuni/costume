@@ -11,6 +11,7 @@ RUN bun run build
 
 FROM nginx:alpine-slim
 
+COPY favicon.ico /usr/share/nginx/html/favicon.ico
 COPY ogp.png /usr/share/nginx/html/ogp.png
 COPY ogp.webp /usr/share/nginx/html/ogp.png
 COPY conf.d/default.conf /etc/nginx/conf.d/default.conf
