@@ -13,6 +13,7 @@ function MainScreen() {
   return (
     <div className="container mx-auto">
       <Route path="/">
+        <title>ゆにコス</title>
         <header className="bg-slate-200 rounded-lg mt-2 mb-4 pl-4 pt-2 pb-2">
           <h1 className="text-2xl text-sky-800">
             <a href="https://yuniruyuni.net">yuniruyuni.net</a> &gt; ゆにコス:
@@ -28,24 +29,27 @@ function MainScreen() {
             return <div>Not found</div>;
           }
           return (
-            <Detail
-              target={target}
-              onClose={() => navigate("/")}
-              onPrevious={() => {
-                const index = costumes.indexOf(target);
-                if (index > 0) {
-                  const id = costumes[index - 1].id;
-                  navigate(`/${id}`);
-                }
-              }}
-              onNext={() => {
-                const index = costumes.indexOf(target);
-                if (index < costumes.length - 1) {
-                  const id = costumes[index + 1].id;
-                  navigate(`/${id}`);
-                }
-              }}
-            />
+            <>
+              <title>{`ゆにコス: ${target.name}`}</title>
+              <Detail
+                target={target}
+                onClose={() => navigate("/")}
+                onPrevious={() => {
+                  const index = costumes.indexOf(target);
+                  if (index > 0) {
+                    const id = costumes[index - 1].id;
+                    navigate(`/${id}`);
+                  }
+                }}
+                onNext={() => {
+                  const index = costumes.indexOf(target);
+                  if (index < costumes.length - 1) {
+                    const id = costumes[index + 1].id;
+                    navigate(`/${id}`);
+                  }
+                }}
+              />
+            </>
           );
         }}
       </Route>
