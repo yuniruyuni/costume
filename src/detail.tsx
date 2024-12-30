@@ -22,6 +22,27 @@ const CloseButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
   </button>
 );
 
+
+const PreviousButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
+  <button
+    type="button"
+    className="absolute left-0 top-0 h-max min-h-full min-w-10 z-10 text-2xl hover:bg-gradient-to-r hover:from-slate-100 text-slate-500"
+    onClick={onClick}
+  >
+    &lt;
+  </button>
+);
+
+const NextButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
+  <button
+    type="button"
+    className="absolute right-0 top-0 h-max min-h-full min-w-10 z-10 text-2xl hover:bg-gradient-to-l hover:from-slate-100 text-slate-500"
+    onClick={onClick}
+  >
+    &gt;
+  </button>
+);
+
 export type DetailProps = {
   target?: Costume;
   onClose: () => void;
@@ -56,13 +77,7 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevi
             "sm:col-span-8 sm:row-span-1",
           )}
       >
-        <button
-          type="button"
-          className="absolute left-0 top-0 h-max min-h-full min-w-10 z-10 text-2xl hover:bg-gradient-to-r hover:from-slate-100 text-slate-500"
-          onClick={onPrevious}
-        >
-          &lt;
-        </button>
+        <PreviousButton onClick={onPrevious} />
         <img
           className={clsx(
             "object-contain object-center",
@@ -73,13 +88,7 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevi
           src={target.image}
           alt={target.name}
         />
-        <button
-          type="button"
-          className="absolute right-0 top-0 h-max min-h-full min-w-10 z-10 text-2xl hover:bg-gradient-to-l hover:from-slate-100 text-slate-500"
-          onClick={onNext}
-        >
-          &gt;
-        </button>
+        <NextButton onClick={onNext} />
       </div>
       <ul
         className={clsx(
