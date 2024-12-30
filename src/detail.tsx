@@ -105,8 +105,7 @@ export const Detail: React.FC<DetailProps> = ({
   if (!target) return undefined;
 
   return (
-    <button
-      type="button"
+    <div
       className={clsx(
         "fixed left-0 top-0 z-10 w-screen h-screen",
         "bg-white",
@@ -147,6 +146,7 @@ export const Detail: React.FC<DetailProps> = ({
           "shadow-lg",
           "bg-slate-100",
           "h-full w-full",
+          "text-center",
           "content-center",
           "overflow-y-auto",
 
@@ -185,6 +185,6 @@ export const Detail: React.FC<DetailProps> = ({
           <div>{target.comment}</div>
         </li>
       </ul>
-    </button>
+    </div>
   );
 };
