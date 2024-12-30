@@ -14,7 +14,7 @@ function MainScreen() {
   return (
     <div className="container mx-auto">
       <header className="bg-slate-200 rounded-lg mt-2 mb-4 pl-4 pt-2 pb-2">
-        <h1 className="text-2xl text-sky-800">ゆにコス: ゆにるユニのコスチュームリスト</h1>
+        <h1 className="text-2xl text-sky-800"><a href="https://yuniruyuni.net">yuniruyuni.net</a> &gt; ゆにコス: ゆにるユニのコスチュームリスト</h1>
       </header>
       <Detail target={target} onClose={() => setTarget(undefined)} />
       <Gallery onSelect={setTarget} />
