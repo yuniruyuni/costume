@@ -28,7 +28,7 @@ export const rawCostumes: Omit<Costume, 'thumbnail' | 'image'>[] = [
     name: "星宮仕えの天使さん",
     author: "みさくらやさん",
     booth: "https://booth.pm/ja/items/5646504",
-    comment: "かわいい！「宇宙におわす女神様に仕える天使をイメージした衣装」らしいです",
+    comment: "「宇宙におわす女神様に仕える天使をイメージした衣装」らしいです。かわいい！",
   },
   {
     id: "ms02_a",
