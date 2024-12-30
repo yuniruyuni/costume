@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { Route } from "wouter";
-import { navigate } from "wouter/use-browser-location";
+import { Route, Router } from "wouter";
+import { navigate, useHashLocation } from "wouter/use-hash-location";
 
 import "./index.css";
 
@@ -19,9 +19,9 @@ function MainScreen() {
             ゆにるユニのコスチュームリスト
           </h1>
         </header>
-        <Gallery onSelect={(target) => navigate(`/photo/${target.id}`)} />
+        <Gallery onSelect={(target) => navigate(`/${target.id}`)} />
       </Route>
-      <Route path="/photo/:id">
+      <Route path="/:id">
         {({ id }) => {
           const target = costumes.find((c) => c.id === id);
           if (!target) {
@@ -35,14 +35,14 @@ function MainScreen() {
                 const index = costumes.indexOf(target);
                 if (index > 0) {
                   const id = costumes[index - 1].id;
-                  navigate(`/photo/${id}`);
+                  navigate(`/${id}`);
                 }
               }}
               onNext={() => {
                 const index = costumes.indexOf(target);
                 if (index < costumes.length - 1) {
                   const id = costumes[index + 1].id;
-                  navigate(`/photo/${id}`);
+                  navigate(`/${id}`);
                 }
               }}
             />
@@ -57,7 +57,9 @@ const root = document.getElementById("root");
 if (root) {
   ReactDOM.createRoot(root).render(
     <React.StrictMode>
-      <MainScreen />
+      <Router hook={useHashLocation}>
+        <MainScreen />
+      </Router>
     </React.StrictMode>,
   );
 }

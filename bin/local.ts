@@ -3,7 +3,6 @@ Bun.serve({
   fetch: async (req) => {
     let path = new URL(req.url).pathname;
     if (path === "/") path = "index.html";
-    if (path.startsWith("/photo/")) path = "index.html";
     path = decodeURI(path);
     const file = Bun.file(`static/${path}`);
     return new Response(file);
