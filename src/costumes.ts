@@ -8,7 +8,7 @@ export type Costume = {
   comment: string;
 };
 
-export const rawCostumes: Omit<Costume, 'thumbnail' | 'image'>[] = [
+export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
   {
     id: "dreamy_step",
     name: "Dreamy Step",
@@ -21,21 +21,24 @@ export const rawCostumes: Omit<Costume, 'thumbnail' | 'image'>[] = [
     name: "巫桜",
     author: "asapidock",
     booth: "https://booth.pm/ja/items/5646504",
-    comment: "「かんなぎざくら」と読むらしい。FF10配信でこういう感じの和服がほしい！っていうのを探したら見つかったまさにいい感じの巫女服。それだけじゃなくて質も良くて気に入ってます。",
+    comment:
+      "「かんなぎざくら」と読むらしい。FF10配信でこういう感じの和服がほしい！っていうのを探したら見つかったまさにいい感じの巫女服。それだけじゃなくて質も良くて気に入ってます。",
   },
   {
     id: "ms03",
     name: "星宮仕えの天使さん",
     author: "みさくらやさん",
     booth: "https://booth.pm/ja/items/5646504",
-    comment: "「宇宙におわす女神様に仕える天使をイメージした衣装」らしいです。かわいい！",
+    comment:
+      "「宇宙におわす女神様に仕える天使をイメージした衣装」らしいです。かわいい！",
   },
   {
     id: "ms02_a",
     name: "星術科制服",
     author: "みさくらやさん",
     booth: "https://booth.pm/ja/items/4702665",
-    comment: "しばしばMicrosoft Flight Simulatorで飛行機を飛ばすときにお借りしているお洋服。機長っぽくない？",
+    comment:
+      "しばしばMicrosoft Flight Simulatorで飛行機を飛ばすときにお借りしているお洋服。機長っぽくない？",
   },
   /*
   {
@@ -51,14 +54,16 @@ export const rawCostumes: Omit<Costume, 'thumbnail' | 'image'>[] = [
     name: "跋星の白装v2",
     author: "みさくらやさん",
     booth: "https://booth.pm/ja/items/3622367",
-    comment: "コートの星がとーてもかわいいです✨️で、でも私にはお洋服の名前の読み方がわからない...なんて読むんだろう＠＠；",
+    comment:
+      "コートの星がとーてもかわいいです✨️で、でも私にはお洋服の名前の読み方がわからない...なんて読むんだろう＠＠；",
   },
   {
     id: "ms01_blue",
     name: "天溢の蒼衣v2",
     author: "みさくらやさん",
     booth: "https://booth.pm/ja/items/3622367",
-    comment: "これもとってもかわいいです〜✨️アイドル感ある。ただやっぱり私にはお洋服の名前の読み方がわからない...なんて読むんだろう＠＠；",
+    comment:
+      "これもとってもかわいいです〜✨️アイドル感ある。ただやっぱり私にはお洋服の名前の読み方がわからない...なんて読むんだろう＠＠；",
   },
   {
     id: "keita_maruyama_kimono_2023",
@@ -86,7 +91,8 @@ export const rawCostumes: Omit<Costume, 'thumbnail' | 'image'>[] = [
     name: "Prelude(Transformed)",
     author: "©Sweet Serenade",
     booth: "https://booth.pm/ja/items/5134409",
-    comment: "Preludeの変身ギミックをONにした状態です✨️アイドル衣装っぽくなる。",
+    comment:
+      "Preludeの変身ギミックをONにした状態です✨️アイドル衣装っぽくなる。",
   },
   {
     id: "little_queen",
@@ -107,14 +113,16 @@ export const rawCostumes: Omit<Costume, 'thumbnail' | 'image'>[] = [
     name: "Re:セーラーロリ",
     author: "かぷちや",
     booth: "https://booth.pm/ja/items/4871296",
-    comment: "かぷちやさんの素敵衣装〜。透明感がいい感じ✨️カーディガンがついてるのでVRCではつけたり外したりできます🌟",
+    comment:
+      "かぷちやさんの素敵衣装〜。透明感がいい感じ✨️カーディガンがついてるのでVRCではつけたり外したりできます🌟",
   },
   {
     id: "secret_garden",
     name: "SecretGarden",
     author: "©ottotto/POTATOTO",
     booth: "https://booth.pm/ja/items/6169513",
-    comment: "頭の花冠が素敵なお花って感じのシークレットガーデン。杖とか持てば魔法使い感があるかも",
+    comment:
+      "頭の花冠が素敵なお花って感じのシークレットガーデン。杖とか持てば魔法使い感があるかも",
   },
   {
     id: "snow_bell",
@@ -128,7 +136,8 @@ export const rawCostumes: Omit<Costume, 'thumbnail' | 'image'>[] = [
     name: "Snow Spirit / スノウスピリット",
     author: "©Riisya Sweets",
     booth: "https://booth.pm/ja/items/6403595",
-    comment: "クリスマスモチーフなスノウスピリット。とても可愛くクリスマス配信なんかで大活躍🌟",
+    comment:
+      "クリスマスモチーフなスノウスピリット。とても可愛くクリスマス配信なんかで大活躍🌟",
   },
   {
     id: "oneisan_code",
@@ -142,12 +151,13 @@ export const rawCostumes: Omit<Costume, 'thumbnail' | 'image'>[] = [
     name: "ルッカ風",
     author: "cherry neru",
     booth: "https://booth.pm/ja/items/5628717",
-    comment: "この衣装は上記以外にも複数の衣装の組み合わせで実現しています。スカーフ部分はReさいくるしょっぷさまのRe-scarf-, ヘルメットは部屋の四隅さまのOPSCORE, バッグは天江製作所さまのウエストバッグを使用させていただきました。",
+    comment:
+      "この衣装は上記以外にも複数の衣装の組み合わせで実現しています。スカーフ部分はReさいくるしょっぷさまのRe-scarf-, ヘルメットは部屋の四隅さまのOPSCORE, バッグは天江製作所さまのウエストバッグを使用させていただきました。",
   },
 ];
 
-export const costumes = rawCostumes.map(costume => ({
-    ...costume,
-    thumbnail: `thumbnails/${costume.id}.png`,
-    image: `images/${costume.id}.png`,
-  }));
+export const costumes = rawCostumes.map((costume) => ({
+  ...costume,
+  thumbnail: `thumbnails/${costume.id}.png`,
+  image: `images/${costume.id}.png`,
+}));

@@ -2,12 +2,34 @@ import { clsx } from "clsx";
 import type React from "react";
 import type { Costume } from "./costumes";
 
+const CloseButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
+  <button
+    type="button"
+    onClick={onClick}
+    className={
+      clsx(
+        "absolute top-0 right-0",
+        "bg-white rounded-md p-2",
+        "inline-flex items-center justify-center",
+        "text-gray-400 hover:text-gray-500 hover:bg-gray-100",
+        "focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500",
+      )}
+    >
+    <span className="sr-only">Close</span>
+    <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+);
+
 export type DetailProps = {
   target?: Costume;
   onClose: () => void;
+  onNext: () => void;
+  onPrevious: () => void;
 };
 
-export const Detail: React.FC<DetailProps> = ({ target, onClose }) => {
+export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevious }) => {
   if (!target) return undefined;
 
   return (
@@ -23,24 +45,42 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose }) => {
         "sm:overflow-y-scroll sm:overflow-x-hidden",
         "sm:grid-cols-12 sm:grid-rows-1",
       )}
-      onClick={onClose}
     >
-      <img
-        className={clsx(
-          "object-contain object-center",
-          "w-full max-w-full",
-          "h-full max-h-full",
-          "rounded-b-3xl",
-          "col-span-1 row-span-10",
-          "sm:object-contain sm:object-center",
-          "sm:w-full sm:max-w-full",
-          "sm:h-full sm:max-h-full",
-          "sm:col-span-8 sm:row-span-1",
-          "sm:rounded-r-3xl",
-        )}
-        src={target.image}
-        alt={target.name}
-      />
+      <CloseButton onClick={onClose} />
+      <div
+          className={clsx(
+            "relative",
+            "w-full max-w-full",
+            "h-full max-h-full",
+            "col-span-1 row-span-10",
+            "sm:col-span-8 sm:row-span-1",
+          )}
+      >
+        <button
+          type="button"
+          className="absolute left-0 top-0 h-max min-h-full min-w-10 z-10 text-2xl hover:bg-gradient-to-r hover:from-slate-100 text-slate-500"
+          onClick={onPrevious}
+        >
+          &lt;
+        </button>
+        <img
+          className={clsx(
+            "object-contain object-center",
+            "col-span-10",
+            "w-full max-w-full",
+            "h-full max-h-full",
+          )}
+          src={target.image}
+          alt={target.name}
+        />
+        <button
+          type="button"
+          className="absolute right-0 top-0 h-max min-h-full min-w-10 z-10 text-2xl hover:bg-gradient-to-l hover:from-slate-100 text-slate-500"
+          onClick={onNext}
+        >
+          &gt;
+        </button>
+      </div>
       <ul
         className={clsx(
           "p-4",

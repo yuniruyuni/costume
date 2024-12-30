@@ -14,7 +14,7 @@ export const Photo: React.FC<PhotoProps> = ({ costume, onSelect }) => (
     className={clsx(
       "rounded-lg",
       "border border-solid border-slate-300",
-      "shadow-md"
+      "shadow-md",
     )}
     onClick={() => onSelect(costume)}
   >
@@ -24,7 +24,7 @@ export const Photo: React.FC<PhotoProps> = ({ costume, onSelect }) => (
         "h-full max-h-full",
         "object-cover object-center",
         "rounded-lg",
-        "hover:bg-slate-300"
+        "hover:bg-slate-300",
       )}
       src={costume.thumbnail}
       alt={costume.name}
