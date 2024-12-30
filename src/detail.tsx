@@ -8,7 +8,7 @@ const CloseButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
     onClick={onClick}
     className={
       clsx(
-        "absolute top-0 right-0",
+        "absolute top-0 right-0 z-30",
         "bg-white rounded-md p-2",
         "inline-flex items-center justify-center",
         "text-gray-400 hover:text-gray-500 hover:bg-gray-100",
