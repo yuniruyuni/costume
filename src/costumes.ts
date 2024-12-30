@@ -154,6 +154,13 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment:
       "クロノ・トリガー配信で使っているお洋服。この衣装は上記以外にも複数の衣装の組み合わせで実現しています。スカーフ部分はReさいくるしょっぷさまのRe-scarf-, ヘルメットは部屋の四隅さまのOPSCORE, バッグは天江製作所さまのウエストバッグを使用させていただきました。",
   },
+  {
+    id: "furisode_set",
+    name: "振袖セット",
+    author: "hajimata雑貨店",
+    booth: "https://booth.pm/ja/items/6428475",
+    comment: "「あけましておめでとうございます」的な雰囲気でいきたいときに✨️",
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
