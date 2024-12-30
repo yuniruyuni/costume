@@ -1,5 +1,5 @@
-import type React from "react";
 import { clsx } from "clsx";
+import type React from "react";
 import type { Costume } from "./costumes";
 
 export type DetailProps = {
@@ -39,7 +39,7 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose }) => {
           "sm:rounded-r-3xl",
         )}
         src={target.image}
-        alt="DreamyStep"
+        alt={target.name}
       />
       <ul
         className={clsx(
