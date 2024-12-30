@@ -2,6 +2,32 @@ import { clsx } from "clsx";
 import type React from "react";
 import type { Costume } from "./costumes";
 
+const copyToClipboard = async (text: string) => {
+  await navigator.clipboard.writeText(text);
+};
+
+const CopyButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
+  <button
+    type="button"
+    onClick={onClick}
+    className={
+      clsx(
+        "relative",
+        "ml-1",
+        "top-1",
+        "bg-blue-400 rounded-md p-1",
+        "inline-flex items-center justify-center",
+        "hover:bg-blue-300",
+        "focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500",
+      )}
+    >
+      <span className="sr-only">Copy</span>
+      <svg className="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/>
+      </svg>
+  </button>
+);
+
 const CloseButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
   <button
     type="button"
@@ -111,7 +137,7 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevi
             Name
           </div>
           <div>
-            {target.name}
+            {target.name} <CopyButton onClick={() => copyToClipboard(target.name)} />
           </div>
         </li>
         <li className="isolate mb-4">
