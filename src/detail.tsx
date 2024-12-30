@@ -73,7 +73,7 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevi
             "relative",
             "w-full max-w-full",
             "h-full max-h-full",
-            "col-span-1 row-span-10",
+            "col-span-1 row-span-8",
             "sm:col-span-8 sm:row-span-1",
           )}
       >
@@ -100,7 +100,7 @@ export const Detail: React.FC<DetailProps> = ({ target, onClose, onNext, onPrevi
           "overflow-y-auto",
 
           "rounded-t-3xl",
-          "row-span-2 col-span-1",
+          "row-span-4 col-span-1",
 
           "sm:rounded-none sm:rounded-l-3xl",
           "sm:row-span-1 sm:col-span-4",
