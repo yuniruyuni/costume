@@ -80,14 +80,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "とても布の表現のできが良いかわいいメイドさんです✨️",
   },
   {
-    id: "prelude",
+    id: "non_transformed",
     name: "Prelude",
     author: "©Sweet Serenade",
     booth: "https://booth.pm/ja/items/5134409",
     comment: "変身ギミックのついているお洋服です✨️️高校生とかそんなイメージ。",
   },
   {
-    id: "prelude_transformed",
+    id: "transformed",
     name: "Prelude(Transformed)",
     author: "©Sweet Serenade",
     booth: "https://booth.pm/ja/items/5134409",
