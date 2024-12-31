@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
 import type React from "react";
+import { useKey } from "react-use";
 import type { Costume } from "./costumes";
 
 const copyToClipboard = async (text: string) => {
@@ -90,7 +91,7 @@ const NextButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
 );
 
 export type DetailProps = {
-  target?: Costume;
+  target: Costume;
   onClose: () => void;
   onNext: () => void;
   onPrevious: () => void;
@@ -102,7 +103,9 @@ export const Detail: React.FC<DetailProps> = ({
   onNext,
   onPrevious,
 }) => {
-  if (!target) return undefined;
+  useKey("Escape", onClose, { }, [onClose]);
+  useKey("ArrowRight", onNext, { }, [onNext]);
+  useKey("ArrowLeft", onPrevious, { }, [onPrevious]);
 
   return (
     <div

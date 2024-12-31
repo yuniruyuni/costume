@@ -48,6 +48,7 @@
   },
   "trustedDependencies": ["@biomejs/biome", "bun"],
   "dependencies": {
+    "react-use": "^17.6.0",
     "wouter": "^3.3.5"
   }
 }
