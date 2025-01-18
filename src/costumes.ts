@@ -6,6 +6,7 @@ export type Costume = {
   author: string;
   booth: string;
   comment: string;
+  vrchat_only: boolean;
 };
 
 export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
@@ -15,6 +16,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     author: "寺井カントリー",
     booth: "https://booth.pm/ja/items/5420885",
     comment: "いつも標準で使っているお洋服。メガネバージョンとかもあります。",
+    vrchat_only: false,
   },
   {
     id: "kannagi_sakura",
@@ -23,6 +25,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/5646504",
     comment:
       "「かんなぎざくら」と読むらしい。FF10配信でこういう感じの和服がほしい！っていうのを探したら見つかったまさにいい感じの巫女服。それだけじゃなくて質も良くて気に入ってます。",
+    vrchat_only: false,
   },
   {
     id: "ms03",
@@ -31,6 +34,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/5054313",
     comment:
       "「宇宙におわす女神様に仕える天使をイメージした衣装」らしいです。かわいい！",
+    vrchat_only: false,
   },
   {
     id: "ms02_a",
@@ -39,6 +43,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/4702665",
     comment:
       "しばしばMicrosoft Flight Simulatorで飛行機を飛ばすときにお借りしているお洋服。機長っぽくない？",
+    vrchat_only: false,
   },
   /*
   {
@@ -47,6 +52,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     author: "みさくらやさん",
     booth: "https://booth.pm/ja/items/4702665",
     comment: "",
+    vrchat_only: false,
   },
   */
   {
@@ -56,6 +62,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/3622367",
     comment:
       "コートの星がとーてもかわいいです✨️で、でも私にはお洋服の名前の読み方がわからない...なんて読むんだろう＠＠；",
+    vrchat_only: false,
   },
   {
     id: "ms01_blue",
@@ -64,6 +71,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/3622367",
     comment:
       "これもとってもかわいいです〜✨️アイドル感ある。ただやっぱり私にはお洋服の名前の読み方がわからない...なんて読むんだろう＠＠；",
+    vrchat_only: false,
   },
   {
     id: "keita_maruyama_kimono_2023",
@@ -71,6 +79,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     author: "©️KEITAMARUYAMA",
     booth: "https://booth.pm/ja/items/5378258",
     comment: "KEITA MARUYAMAさんの2023年の着物！質感のよく出来た和服です〜✨️",
+    vrchat_only: false,
   },
   {
     id: "lily_bell_reorder",
@@ -78,6 +87,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     author: "©Sweet Serenade",
     booth: "https://booth.pm/ja/items/5691110",
     comment: "とても布の表現のできが良いかわいいメイドさんです✨️",
+    vrchat_only: false,
   },
   {
     id: "non_transformed",
@@ -85,6 +95,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     author: "©Sweet Serenade",
     booth: "https://booth.pm/ja/items/5134409",
     comment: "変身ギミックのついているお洋服です✨️️高校生とかそんなイメージ。",
+    vrchat_only: false,
   },
   {
     id: "transformed",
@@ -93,6 +104,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/5134409",
     comment:
       "Preludeの変身ギミックをONにした状態です✨️アイドル衣装っぽくなる。",
+    vrchat_only: false,
   },
   {
     id: "little_queen",
@@ -100,13 +112,15 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     author: "choco*shop",
     booth: "https://booth.pm/ja/items/6178156",
     comment: "質感の素敵な衣装です～。",
+    vrchat_only: false,
   },
   {
     id: "night_in_yoshiwara",
     name: "ナイト・イン・ヨシワラ",
     author: "©Vagrant",
     booth: "https://booth.pm/ja/items/5359699",
-    comment: "とてもセクシーなアバター衣装です✨️",
+    comment: "とてもセクシーなアバター衣装です✨️Twitchの配信ガイドライン的に厳しいので規制のゆるいVRC以外だと色々制約があるかも。",
+    vrchat_only: false,
   },
   {
     id: "sailor_loli_re",
@@ -115,6 +129,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/4871296",
     comment:
       "かぷちやさんの素敵衣装〜。透明感がいい感じ✨️カーディガンがついてるのでVRCではつけたり外したりできます🌟",
+    vrchat_only: false,
   },
   {
     id: "secret_garden",
@@ -123,6 +138,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/6169513",
     comment:
       "頭の花冠が素敵なお花って感じのシークレットガーデン。杖とか持てば魔法使い感があるかも",
+    vrchat_only: false,
   },
   {
     id: "snow_bell",
@@ -130,6 +146,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     author: "Radiant-Iseo",
     booth: "https://booth.pm/ja/items/6370137",
     comment: "サンタガール感もちょっとあるスノーベル。冬にピッタリ🌟",
+    vrchat_only: false,
   },
   {
     id: "snow_spirit",
@@ -138,6 +155,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/6403595",
     comment:
       "クリスマスモチーフなスノウスピリット。とても可愛くクリスマス配信なんかで大活躍🌟",
+    vrchat_only: false,
   },
   {
     id: "oneisan_code",
@@ -145,6 +163,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     author: "北極狐",
     booth: "https://booth.pm/ja/items/6274337",
     comment: "おねーさんだぞ✨️",
+    vrchat_only: false,
   },
   {
     id: "lucca_style",
@@ -153,6 +172,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://booth.pm/ja/items/5628717",
     comment:
       "クロノ・トリガー配信で使っているお洋服。この衣装は上記以外にも複数の衣装の組み合わせで実現しています。スカーフ部分はReさいくるしょっぷさまのRe-scarf-, ヘルメットは部屋の四隅さまのOPSCORE, バッグは天江製作所さまのウエストバッグを使用させていただきました。",
+    vrchat_only: false,
   },
   {
     id: "furisode_set",
@@ -160,6 +180,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     author: "hajimata雑貨店",
     booth: "https://booth.pm/ja/items/6428475",
     comment: "「あけましておめでとうございます」的な雰囲気でいきたいときに✨️",
+    vrchat_only: false,
   },
 ];
 
