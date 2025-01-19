@@ -1,4 +1,4 @@
-FROM oven/bun:latest AS build
+FROM oven/bun:1.1.43 AS build
 
 WORKDIR /work
 
