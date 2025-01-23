@@ -18,7 +18,7 @@ const CopyButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
       "bg-blue-400 rounded-md p-1",
       "inline-flex items-center justify-center",
       "hover:bg-blue-300",
-      "focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500",
+      "focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-indigo-500",
     )}
   >
     <span className="sr-only">Copy</span>
@@ -48,7 +48,7 @@ const CloseButton: React.FC<{ onClick: () => void }> = ({ onClick }) => (
       "bg-white rounded-md p-2",
       "inline-flex items-center justify-center",
       "text-gray-400 hover:text-gray-500 hover:bg-gray-100",
-      "focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500",
+      "focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-indigo-500",
     )}
   >
     <span className="sr-only">Close</span>
@@ -112,7 +112,7 @@ export const Detail: React.FC<DetailProps> = ({
       className={clsx(
         "fixed left-0 top-0 z-10 w-screen h-screen",
         "bg-white",
-        "outline-none",
+        "outline-hidden",
         "grid gap-4",
         "overflow-x-auto overflow-y-hidden",
         "grid-cols-1 grid-rows-12",
