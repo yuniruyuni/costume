@@ -187,7 +187,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "星清 -StarDream-",
     author: "もやししなしな",
     booth: "https://moyashichan.booth.pm/items/6330532",
-    comment: "RTA in VRChatの第一回に倫葉さんの0Exitの解説役で参加したときに、同じく参加者(タイムコマンダー走者)だった「もやしちゃん」さんが作って同日ランの後に宣伝していた服！ついその場で購入してしまった✨️ デザインがよくてかわいい✨️",
+    comment: "RTA in VRChatの第一回に倫葉さんの0Exitの解説役で参加したときに、同じく参加者(タイムコマンドー走者)だった「もやしちゃん」さんが作って同日ランの後に宣伝していた服！ついその場で購入してしまった✨️ デザインがよくてかわいい✨️",
     vrchat_only: false,
   },
 ];
