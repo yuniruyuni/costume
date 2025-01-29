@@ -19,6 +19,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     vrchat_only: false,
   },
   {
+    id: "mr_damian",
+    name: "絶対に髪を毟るシマエナガ",
+    author: "ぽた屋",
+    booth: "https://booth.pm/ja/items/5745851",
+    comment: "いつも頭の上に乗っている「みすたーだみあん」のお借りしているアバターは、ぽた屋様の「絶対に髪を毟るシマエナガ」というアバター衣装(?)です。楽しそうにたまに私の髪を毟ってきます。ぐぐぐ……。",
+    vrchat_only: false,
+  },
+  {
     id: "kannagi_sakura",
     name: "巫桜",
     author: "asapidock",
