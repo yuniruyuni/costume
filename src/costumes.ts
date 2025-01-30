@@ -198,6 +198,22 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "RTA in VRChatの第一回に倫葉さんの0Exitの解説役で参加したときに、同じく参加者(タイムコマンドー走者)だった「もやしちゃん」さんが作って同日ランの後に宣伝していた服！ついその場で購入してしまった✨️ デザインがよくてかわいい✨️",
     vrchat_only: false,
   },
+  {
+    id: "idol_magica",
+    name: "Idol Magica",
+    author: "ANMNMM",
+    booth: "https://booth.pm/ja/items/5068751",
+    comment: "アイドルっぽくかつ魔法使いっぽい見た目のかわいいアバター衣装✨️ 魔法学園で活動するアイドルのステージ衣装兼制服をイメージして作られたとのことです。魔法使いっぽいことするときに使ってます。",
+    vrchat_only: false,
+  },
+  {
+    id: "robe_of_wandering_magus",
+    name: "旅魔術師のローブ",
+    author: "@SetsumeWorks",
+    booth: "https://booth.pm/ja/items/5022628",
+    comment: "旅魔術師のローブという名前のアバター衣装なのですが、Final Fantasy 3の初見プレイを遊ぶときに白魔道士っぽくローブ着たいなあと思って着始めました。ちなみにFinal Fantasy 3ではそのあと「導師」がそのままこういう猫耳ローブだということがわかるという展開に……。∑('-';;;) ローブの中の服はANMNMM様のIdol Magicaを着ています。",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
