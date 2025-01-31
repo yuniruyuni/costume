@@ -214,6 +214,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "旅魔術師のローブという名前のアバター衣装なのですが、Final Fantasy 3の初見プレイを遊ぶときに白魔道士っぽくローブ着たいなあと思って着始めました。ちなみにFinal Fantasy 3ではそのあと「導師」がそのままこういう猫耳ローブだということがわかるという展開に……。∑('-';;;) ローブの中の服はANMNMM様のIdol Magicaを着ています。",
     vrchat_only: false,
   },
+  {
+    id: "race_queen",
+    name: "レースクイーン",
+    author: "SENITI_STORE",
+    booth: "https://booth.pm/ja/items/5333989",
+    comment: "レースクイーンの衣装です。RTAでタイムを削り合うのが好きなわけなので、レースゲームとか実は結構楽しめるんじゃないの？？って思ったんで1つ遊んでみようということで、首都高バトルを遊ぶことにしたんですけど、そのゲームに似合うような衣装を探していたらこれを見つけてしまいました。クールで格好よくてセクシーでって感じのイメージで素敵です〜✨",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
