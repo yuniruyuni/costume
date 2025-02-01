@@ -11,6 +11,22 @@ export type Costume = {
 
 export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
   {
+    id: "yukichan",
+    name: "ユキちゃん",
+    author: "Honeycrisp",
+    booth: "https://booth.pm/ja/items/2198694",
+    comment: "アバターのお顔で許可いただいてお借りしているのはHoneycrisp様のユキちゃんです！いつもやってる「にぱ〜✨️」とかは実はユキちゃん界隈の文化だったりします。とてもかわいいのです。",
+    vrchat_only: false,
+  },
+  {
+    id: "manuka",
+    name: "マヌカ",
+    author: "©ジンゴ",
+    booth: "https://booth.pm/ja/items/5058077",
+    comment: "アバターのお体でお借りしているのはジンゴさんのマヌカちゃんです。ユキちゃんだと着ることができるお洋服が余りにもすくないので、自分のイメージする体のアバターさんで、対応しているお洋服が多くて、かつ他のデータを改変するための利用や配信利用が許可されているアバターさん……という条件で調べさせていただいて使わせていただいています。直接使ってもかわいいのでオススメのアバターだったり✨️ただ裸をここで紹介するわけにもいかないので、「こだわりスクール水着( https://yukikurosaki.booth.pm/items/3784030 )」を写真ではお借りして着ています。",
+    vrchat_only: false,
+  },
+  {
     id: "dreamy_step",
     name: "Dreamy Step",
     author: "寺井カントリー",
