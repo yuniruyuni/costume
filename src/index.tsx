@@ -9,7 +9,7 @@ import { costumes } from "./costumes";
 import { Detail } from "./detail";
 import { Gallery } from "./gallery";
 
-function MainScreen() {
+export function MainScreen() {
   return (
     <div className="container mx-auto">
       <Route path="/">
