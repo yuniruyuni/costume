@@ -238,6 +238,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "レースクイーンの衣装です。RTAでタイムを削り合うのが好きなわけなので、レースゲームとか実は結構楽しめるんじゃないの？？って思ったんで1つ遊んでみようということで、首都高バトルを遊ぶことにしたんですけど、そのゲームに似合うような衣装を探していたらこれを見つけてしまいました。クールで格好よくてセクシーでって感じのイメージで素敵です〜✨",
     vrchat_only: false,
   },
+  {
+    id: "gladioroar",
+    name: "Gladioroar-グラジオロア",
+    author: "むむしょっぷ",
+    booth: "https://booth.pm/ja/items/5823815",
+    comment: "複数のレースゲームをやるのにいろいろな衣装がほしいなーっていうのと、レースクイーンな「傘」がほしいなーって思って買った衣装です〜✨️ 買ってみたら車っぽい質感のスカートなどかわいい要素満載✨️これもお気に入りです✨️でも私がポンコツで、ぐらじおろあ、という読み方がなかなか読めない。。。！",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
