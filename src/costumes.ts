@@ -246,6 +246,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "複数のレースゲームをやるのにいろいろな衣装がほしいなーっていうのと、レースクイーンな「傘」がほしいなーって思って買った衣装です〜✨️ 買ってみたら車っぽい質感のスカートなどかわいい要素満載✨️これもお気に入りです✨️でも私がポンコツで、ぐらじおろあ、という読み方がなかなか読めない。。。！",
     vrchat_only: false,
   },
+  {
+    id: "nurse_maid",
+    name: "ナースメイド服",
+    author: "ちょり*",
+    booth: "https://booth.pm/ja/items/5081520",
+    comment: "ナースなメイドさんなお洋服です〜！かわいい！テイルズオブファンタジアの配信のためにミントさんっぽい「ナース服だけどナース以外の成分入ってる服」探してたときに見つけて一目惚れしちゃいました🌟",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
