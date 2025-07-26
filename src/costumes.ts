@@ -254,6 +254,22 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "ナースなメイドさんなお洋服です〜！かわいい！テイルズオブファンタジアの配信のためにミントさんっぽい「ナース服だけどナース以外の成分入ってる服」探してたときに見つけて一目惚れしちゃいました🌟",
     vrchat_only: false,
   },
+  {
+    id: "furifu_yukata",
+    name: "ふりふの浴衣",
+    author: "BLUESTELLA",
+    booth: "https://bluestella1127.booth.pm/items/5901869",
+    comment: "とても素敵な感じの浴衣です〜。夏のVRC配信コラボをしようみたいな話があってそのためにboothで見つけて事前準備〜！楽しみです🌟 衣装の説明としては「株式会社三松さんの大人気ブランド『ふりふ』の浴衣タイアップ衣装」とのことで、実際可愛いから謎の納得感。",
+    vrchat_only: false,
+  },
+  {
+    id: "my_sunny_femme",
+    name: "My Sunny - マイ サニー",
+    author: "R&Coco.",
+    booth: "https://r-coco.booth.pm/items/7031603",
+    comment: "夏です〜！！かわいいしなんとなく涼しそう！浮き輪付き……！",
+    vrchat_only: true,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
