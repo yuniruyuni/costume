@@ -278,6 +278,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "おいしそうなアイスクリーム！にぱ〜〜！！って食べちゃいます🌟",
     vrchat_only: false,
   },
+  {
+    id: "tsukikonome",
+    name: "月狐の眼",
+    author: "輪廻東京",
+    booth: "https://rinnetokyo.booth.pm/items/7192364",
+    comment: "すこしセクシーで素敵なお狐様になれるコスチュームです🌟",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
