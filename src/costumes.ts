@@ -286,6 +286,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "すこしセクシーで素敵なお狐様になれるコスチュームです🌟",
     vrchat_only: false,
   },
+  {
+    id: "lil_mero_kiss",
+    name: "りるめろきっす",
+    author: "白猫通りのナギ亭",
+    booth: "https://naginagistore.booth.pm/items/6857681",
+    comment: "リボンとレースがたっぷりのワンピース！かわいい！",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
