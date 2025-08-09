@@ -270,6 +270,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "夏です〜！！かわいいしなんとなく涼しそう！浮き輪付き……！",
     vrchat_only: true,
   },
+  {
+    id: "sugar_pop",
+    name: "Sugar Pop",
+    author: "ZZ",
+    booth: "https://zz-shop.booth.pm/items/7199289",
+    comment: "おいしそうなアイスクリーム！にぱ〜〜！！って食べちゃいます🌟",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
