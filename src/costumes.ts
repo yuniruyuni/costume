@@ -318,6 +318,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "ビキニな水着です〜！シンプルにかわいいです🌟Twitchの配信の規約などの都合で、水着は一般に配信でお着替えのご要望NGです。VRC配信で水辺に行くときにたまに着てるので見に来てね🌟",
     vrchat_only: false,
   },
+  {
+    id: "miina_costume",
+    name: "Miina Costume",
+    author: "sono",
+    booth: "https://sonovr.booth.pm/items/3454326",
+    comment: "アイドル衣装な感じの衣装です🌟春霞みぃなさんという別のVTuberさんの衣装らしいのですが、配信で利用してもOKみたいなライセンスで公開されており使用させていただいています。",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
