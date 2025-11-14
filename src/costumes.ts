@@ -326,6 +326,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "アイドル衣装な感じの衣装です🌟春霞みぃなさんという別のVTuberさんの衣装らしいのですが、配信で利用してもOKみたいなライセンスで公開されており使用させていただいています。",
     vrchat_only: false,
   },
+  {
+    id: "bergblumchen",
+    name: "Bergblümchen",
+    author: "もやししなしな",
+    booth: "https://moyashichan.booth.pm/items/7617689",
+    comment: "もやしさんのアバター衣装第二弾！とってもかわいい民族衣装✨️",
+    vrchat_only: false,
+  }
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
