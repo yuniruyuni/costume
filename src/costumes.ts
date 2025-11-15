@@ -15,7 +15,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "ユキちゃん",
     author: "Honeycrisp",
     booth: "https://booth.pm/ja/items/2198694",
-    comment: "アバターのお顔で許可いただいてお借りしているのはHoneycrisp様のユキちゃんです！いつもやってる「にぱ〜✨️」とかは実はユキちゃん界隈の文化だったりします。とてもかわいいのです。",
+    comment:
+      "アバターのお顔で許可いただいてお借りしているのはHoneycrisp様のユキちゃんです！いつもやってる「にぱ〜✨️」とかは実はユキちゃん界隈の文化だったりします。とてもかわいいのです。",
     vrchat_only: false,
   },
   {
@@ -23,7 +24,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "マヌカ",
     author: "©ジンゴ",
     booth: "https://booth.pm/ja/items/5058077",
-    comment: "アバターのお体でお借りしているのはジンゴさんのマヌカちゃんです。ユキちゃんだと着ることができるお洋服が余りにもすくないので、自分のイメージする体のアバターさんで、対応しているお洋服が多くて、かつ他のデータを改変するための利用や配信利用が許可されているアバターさん……という条件で調べさせていただいて使わせていただいています。直接使ってもかわいいのでオススメのアバターだったり✨️ただ裸をここで紹介するわけにもいかないので、「こだわりスクール水着( https://yukikurosaki.booth.pm/items/3784030 )」を写真ではお借りして着ています。",
+    comment:
+      "アバターのお体でお借りしているのはジンゴさんのマヌカちゃんです。ユキちゃんだと着ることができるお洋服が余りにもすくないので、自分のイメージする体のアバターさんで、対応しているお洋服が多くて、かつ他のデータを改変するための利用や配信利用が許可されているアバターさん……という条件で調べさせていただいて使わせていただいています。直接使ってもかわいいのでオススメのアバターだったり✨️ただ裸をここで紹介するわけにもいかないので、「こだわりスクール水着( https://yukikurosaki.booth.pm/items/3784030 )」を写真ではお借りして着ています。",
     vrchat_only: false,
   },
   {
@@ -39,7 +41,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "絶対に髪を毟るシマエナガ",
     author: "ぽた屋",
     booth: "https://booth.pm/ja/items/5745851",
-    comment: "いつも頭の上に乗っている「みすたーだみあん」のお借りしているアバターは、ぽた屋様の「絶対に髪を毟るシマエナガ」というアバター衣装(?)です。楽しそうにたまに私の髪を毟ってきます。ぐぐぐ……。",
+    comment:
+      "いつも頭の上に乗っている「みすたーだみあん」のお借りしているアバターは、ぽた屋様の「絶対に髪を毟るシマエナガ」というアバター衣装(?)です。楽しそうにたまに私の髪を毟ってきます。ぐぐぐ……。",
     vrchat_only: false,
   },
   {
@@ -143,7 +146,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "ナイト・イン・ヨシワラ",
     author: "©Vagrant",
     booth: "https://booth.pm/ja/items/5359699",
-    comment: "とてもセクシーなアバター衣装です✨️Twitchの配信ガイドライン的に厳しいので規制のゆるいVRC以外だと色々制約があるかも。",
+    comment:
+      "とてもセクシーなアバター衣装です✨️Twitchの配信ガイドライン的に厳しいので規制のゆるいVRC以外だと色々制約があるかも。",
     vrchat_only: false,
   },
   {
@@ -211,7 +215,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "星清 -StarDream-",
     author: "もやししなしな",
     booth: "https://moyashichan.booth.pm/items/6330532",
-    comment: "RTA in VRChatの第一回に倫葉さんの0Exitの解説役で参加したときに、同じく参加者(タイムコマンドー走者)だった「もやしちゃん」さんが作って同日ランの後に宣伝していた服！ついその場で購入してしまった✨️ デザインがよくてかわいい✨️",
+    comment:
+      "RTA in VRChatの第一回に倫葉さんの0Exitの解説役で参加したときに、同じく参加者(タイムコマンドー走者)だった「もやしちゃん」さんが作って同日ランの後に宣伝していた服！ついその場で購入してしまった✨️ デザインがよくてかわいい✨️",
     vrchat_only: false,
   },
   {
@@ -219,7 +224,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "Idol Magica",
     author: "ANMNMM",
     booth: "https://booth.pm/ja/items/5068751",
-    comment: "アイドルっぽくかつ魔法使いっぽい見た目のかわいいアバター衣装✨️ 魔法学園で活動するアイドルのステージ衣装兼制服をイメージして作られたとのことです。魔法使いっぽいことするときに使ってます。",
+    comment:
+      "アイドルっぽくかつ魔法使いっぽい見た目のかわいいアバター衣装✨️ 魔法学園で活動するアイドルのステージ衣装兼制服をイメージして作られたとのことです。魔法使いっぽいことするときに使ってます。",
     vrchat_only: false,
   },
   {
@@ -227,7 +233,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "旅魔術師のローブ",
     author: "@SetsumeWorks",
     booth: "https://booth.pm/ja/items/5022628",
-    comment: "旅魔術師のローブという名前のアバター衣装なのですが、Final Fantasy 3の初見プレイを遊ぶときに白魔道士っぽくローブ着たいなあと思って着始めました。ちなみにFinal Fantasy 3ではそのあと「導師」がそのままこういう猫耳ローブだということがわかるという展開に……。∑('-';;;) ローブの中の服はANMNMM様のIdol Magicaを着ています。",
+    comment:
+      "旅魔術師のローブという名前のアバター衣装なのですが、Final Fantasy 3の初見プレイを遊ぶときに白魔道士っぽくローブ着たいなあと思って着始めました。ちなみにFinal Fantasy 3ではそのあと「導師」がそのままこういう猫耳ローブだということがわかるという展開に……。∑('-';;;) ローブの中の服はANMNMM様のIdol Magicaを着ています。",
     vrchat_only: false,
   },
   {
@@ -235,7 +242,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "レースクイーン",
     author: "SENITI_STORE",
     booth: "https://booth.pm/ja/items/5333989",
-    comment: "レースクイーンの衣装です。RTAでタイムを削り合うのが好きなわけなので、レースゲームとか実は結構楽しめるんじゃないの？？って思ったんで1つ遊んでみようということで、首都高バトルを遊ぶことにしたんですけど、そのゲームに似合うような衣装を探していたらこれを見つけてしまいました。クールで格好よくてセクシーでって感じのイメージで素敵です〜✨",
+    comment:
+      "レースクイーンの衣装です。RTAでタイムを削り合うのが好きなわけなので、レースゲームとか実は結構楽しめるんじゃないの？？って思ったんで1つ遊んでみようということで、首都高バトルを遊ぶことにしたんですけど、そのゲームに似合うような衣装を探していたらこれを見つけてしまいました。クールで格好よくてセクシーでって感じのイメージで素敵です〜✨",
     vrchat_only: false,
   },
   {
@@ -243,7 +251,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "Gladioroar-グラジオロア",
     author: "むむしょっぷ",
     booth: "https://booth.pm/ja/items/5823815",
-    comment: "複数のレースゲームをやるのにいろいろな衣装がほしいなーっていうのと、レースクイーンな「傘」がほしいなーって思って買った衣装です〜✨️ 買ってみたら車っぽい質感のスカートなどかわいい要素満載✨️これもお気に入りです✨️でも私がポンコツで、ぐらじおろあ、という読み方がなかなか読めない。。。！",
+    comment:
+      "複数のレースゲームをやるのにいろいろな衣装がほしいなーっていうのと、レースクイーンな「傘」がほしいなーって思って買った衣装です〜✨️ 買ってみたら車っぽい質感のスカートなどかわいい要素満載✨️これもお気に入りです✨️でも私がポンコツで、ぐらじおろあ、という読み方がなかなか読めない。。。！",
     vrchat_only: false,
   },
   {
@@ -251,7 +260,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "ナースメイド服",
     author: "ちょり*",
     booth: "https://booth.pm/ja/items/5081520",
-    comment: "ナースなメイドさんなお洋服です〜！かわいい！テイルズオブファンタジアの配信のためにミントさんっぽい「ナース服だけどナース以外の成分入ってる服」探してたときに見つけて一目惚れしちゃいました🌟",
+    comment:
+      "ナースなメイドさんなお洋服です〜！かわいい！テイルズオブファンタジアの配信のためにミントさんっぽい「ナース服だけどナース以外の成分入ってる服」探してたときに見つけて一目惚れしちゃいました🌟",
     vrchat_only: false,
   },
   {
@@ -259,7 +269,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "ふりふの浴衣",
     author: "BLUESTELLA",
     booth: "https://bluestella1127.booth.pm/items/5901869",
-    comment: "とても素敵な感じのシンプルな浴衣です〜。夏のVRC配信コラボをしようみたいな話があってそのためにboothで見つけて事前準備〜！楽しみです🌟 衣装の説明としては「株式会社三松さんの大人気ブランド『ふりふ』の浴衣タイアップ衣装」とのことで、実際可愛いから謎の納得感。",
+    comment:
+      "とても素敵な感じのシンプルな浴衣です〜。夏のVRC配信コラボをしようみたいな話があってそのためにboothで見つけて事前準備〜！楽しみです🌟 衣装の説明としては「株式会社三松さんの大人気ブランド『ふりふ』の浴衣タイアップ衣装」とのことで、実際可愛いから謎の納得感。",
     vrchat_only: false,
   },
   {
@@ -267,7 +278,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "おとめ浴衣",
     author: "てんぱすおおもり",
     booth: "https://tempasta.booth.pm/items/7265006",
-    comment: "もっと乙女チックでガーリーな浴衣です🌟 夏のVRC配信コラボをしようみたいな話があってそのためにboothで見つけて事前準備〜！こっちは直前までコラボ相手のふわわちゃんに隠しておいて当日驚かせる作戦なので当日が楽しみです🌟",
+    comment:
+      "もっと乙女チックでガーリーな浴衣です🌟 夏のVRC配信コラボをしようみたいな話があってそのためにboothで見つけて事前準備〜！こっちは直前までコラボ相手のふわわちゃんに隠しておいて当日驚かせる作戦なので当日が楽しみです🌟",
     vrchat_only: false,
   },
   {
@@ -307,7 +319,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "️PrimaStella☆Summer",
     author: "澪の魔法屋(https://miomio30.booth.pm/)",
     booth: "https://miomio30.booth.pm/items/7238149",
-    comment: "ビキニ＆スカートな水着です〜！とっても大きなリボンと、VRCではシェーダで動く波模様が素敵🌟",
+    comment:
+      "ビキニ＆スカートな水着です〜！とっても大きなリボンと、VRCではシェーダで動く波模様が素敵🌟",
     vrchat_only: false,
   },
   {
@@ -315,7 +328,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "Lolipop Bikini",
     author: "Neon Maru",
     booth: "https://neonmaru.booth.pm/items/5875188",
-    comment: "ビキニな水着です〜！シンプルにかわいいです🌟Twitchの配信の規約などの都合で、水着は一般に配信でお着替えのご要望NGです。VRC配信で水辺に行くときにたまに着てるので見に来てね🌟",
+    comment:
+      "ビキニな水着です〜！シンプルにかわいいです🌟Twitchの配信の規約などの都合で、水着は一般に配信でお着替えのご要望NGです。VRC配信で水辺に行くときにたまに着てるので見に来てね🌟",
     vrchat_only: false,
   },
   {
@@ -323,7 +337,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "Miina Costume",
     author: "sono",
     booth: "https://sonovr.booth.pm/items/3454326",
-    comment: "アイドル衣装な感じの衣装です🌟春霞みぃなさんという別のVTuberさんの衣装らしいのですが、配信で利用してもOKみたいなライセンスで公開されており使用させていただいています。",
+    comment:
+      "アイドル衣装な感じの衣装です🌟春霞みぃなさんという別のVTuberさんの衣装らしいのですが、配信で利用してもOKみたいなライセンスで公開されており使用させていただいています。",
     vrchat_only: false,
   },
   {
@@ -333,7 +348,7 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     booth: "https://moyashichan.booth.pm/items/7617689",
     comment: "もやしさんのアバター衣装第二弾！とってもかわいい民族衣装✨️",
     vrchat_only: false,
-  }
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({

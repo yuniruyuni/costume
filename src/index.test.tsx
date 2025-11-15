@@ -22,13 +22,15 @@ describe("MainScreen (index) のルーティング", () => {
     render(
       <Router hook={createFakeLocation("/")}>
         <MainScreen />
-      </Router>
+      </Router>,
     );
     // ヘッダーに表示される "yuniruyuni.net" のリンクが表示されること
     expect(screen.getByText("yuniruyuni.net")).toBeInTheDocument();
     // Gallery コンポーネントは各 Costume のサムネイル画像をレンダリングしているはずなので、
     // costumes 配列の先頭の Costume の alt 属性（名前）が表示されていることを確認
-    expect(screen.getByRole("img", { name: costumes[0].name })).toBeInTheDocument();
+    expect(
+      screen.getByRole("img", { name: costumes[0].name }),
+    ).toBeInTheDocument();
   });
 
   test("有効な id の場合、Detail がレンダリングされる", () => {
@@ -36,19 +38,24 @@ describe("MainScreen (index) のルーティング", () => {
     render(
       <Router hook={createFakeLocation(`/${validId}`)}>
         <MainScreen />
-      </Router>
+      </Router>,
     );
     // Detail コンポーネントはタイトルに "ゆにコス: {costume.name}" を表示しているので、それを確認
-    expect(screen.getByText(`ゆにコス: ${costumes[0].name}`)).toBeInTheDocument();
+    expect(
+      screen.getByText(`ゆにコス: ${costumes[0].name}`),
+    ).toBeInTheDocument();
     // また、Detail 内の画像が costume.image を src に持つことも確認
-    expect(screen.getByRole("img", { name: costumes[0].name })).toHaveAttribute("src", costumes[0].image);
+    expect(screen.getByRole("img", { name: costumes[0].name })).toHaveAttribute(
+      "src",
+      costumes[0].image,
+    );
   });
 
   test("無効な id の場合、'Not found' がレンダリングされる", () => {
     render(
       <Router hook={createFakeLocation("/nonexistent")}>
         <MainScreen />
-      </Router>
+      </Router>,
     );
     expect(screen.getByText("Not found")).toBeInTheDocument();
   });

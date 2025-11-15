@@ -103,9 +103,9 @@ export const Detail: React.FC<DetailProps> = ({
   onNext,
   onPrevious,
 }) => {
-  useKey("Escape", onClose, { }, [onClose]);
-  useKey("ArrowRight", onNext, { }, [onNext]);
-  useKey("ArrowLeft", onPrevious, { }, [onPrevious]);
+  useKey("Escape", onClose, {}, [onClose]);
+  useKey("ArrowRight", onNext, {}, [onNext]);
+  useKey("ArrowLeft", onPrevious, {}, [onPrevious]);
 
   return (
     <div
