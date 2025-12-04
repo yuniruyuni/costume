@@ -1,5 +1,5 @@
-import { describe, test, expect } from "bun:test";
-import { rawCostumes, costumes } from "./costumes";
+import { describe, expect, test } from "bun:test";
+import { costumes, rawCostumes } from "./costumes";
 
 describe("costumes モジュール", () => {
   test("各 Costume に thumbnail と image のパスが正しく追加される", () => {

@@ -1,9 +1,9 @@
+import { afterEach, describe, expect, test } from "bun:test";
+import { cleanup, render, screen } from "@testing-library/react";
 import { useState } from "react";
-import { describe, test, expect, afterEach } from "bun:test";
-import { render, screen, cleanup } from "@testing-library/react";
 import { Router } from "wouter";
-import { costumes } from "./costumes";
 import { MainScreen } from "./";
+import { costumes } from "./costumes";
 
 afterEach(cleanup);
 

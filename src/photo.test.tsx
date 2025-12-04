@@ -1,5 +1,5 @@
-import { describe, test, expect, jest, afterEach } from "bun:test";
-import { render, screen, cleanup, fireEvent } from "@testing-library/react";
+import { afterEach, describe, expect, jest, test } from "bun:test";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import type { Costume } from "./costumes";
 import { Photo } from "./photo";
 
