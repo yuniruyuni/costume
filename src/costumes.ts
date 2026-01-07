@@ -349,6 +349,14 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "もやしさんのアバター衣装第二弾！とってもかわいい民族衣装✨️",
     vrchat_only: false,
   },
+  {
+    id: "hunter",
+    name: "狩人の装束（オオカミ） / Hunter's outfit (Wolf)",
+    author: "META TALIER",
+    booth: "https://metatelier.booth.pm/items/4669916",
+    comment: "狩人な感じのアバター衣装...! オクトパストラベラーでハンイットさん主人公に選んだときにいい感じのハンター衣装ないかなーって探して検索にひっかかりに一発で「これ！いい！！」ってなりました✨️",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
