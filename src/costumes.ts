@@ -361,6 +361,6 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
 
 export const costumes = rawCostumes.map((costume) => ({
   ...costume,
-  thumbnail: `/thumbnails/${costume.id}.png`,
-  image: `/images/${costume.id}.png`,
+  thumbnail: `/thumbnails/${costume.id}.webp`,
+  image: `/images/${costume.id}.webp`,
 }));

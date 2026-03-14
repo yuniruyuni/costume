@@ -8,8 +8,8 @@ afterEach(cleanup);
 const sampleCostume: Costume = {
   id: "test1",
   name: "Test Costume",
-  thumbnail: "/thumbnails/test1.png",
-  image: "/images/test1.png",
+  thumbnail: "/thumbnails/test1.webp",
+  image: "/images/test1.webp",
   author: "Test Author",
   booth: "https://example.com",
   comment: "This is a test comment.",

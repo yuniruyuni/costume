@@ -7,8 +7,8 @@ describe("costumes モジュール", () => {
       const mapped = costumes.find((c) => c.id === costume.id);
       expect(mapped).toBeDefined();
       if (mapped) {
-        expect(mapped.thumbnail).toBe(`/thumbnails/${costume.id}.png`);
-        expect(mapped.image).toBe(`/images/${costume.id}.png`);
+        expect(mapped.thumbnail).toBe(`/thumbnails/${costume.id}.webp`);
+        expect(mapped.image).toBe(`/images/${costume.id}.webp`);
       }
     }
   });

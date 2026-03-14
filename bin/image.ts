@@ -46,7 +46,7 @@ class ImageConverter {
 const thumbConv = new ImageConverter(
   "images/",
   "static/thumbnails/",
-  sharp.format.png,
+  sharp.format.webp,
   {
     width: 160,
     height: 320,
@@ -55,14 +55,14 @@ const thumbConv = new ImageConverter(
 const imageConv = new ImageConverter(
   "images/",
   "static/images/",
-  sharp.format.png,
+  sharp.format.webp,
   {},
 );
 
 const ogpConv = new ImageConverter(
   "images/",
   "static/ogp/",
-  sharp.format.png,
+  sharp.format.webp,
   { width: 1200, height: 630 },
 );
 

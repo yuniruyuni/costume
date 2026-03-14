@@ -24,7 +24,7 @@ for (const costume of rawCostumes) {
   const title = escapeHtml(`ゆにコス: ${costume.name}`);
   const description = escapeHtml(truncate(costume.comment, 200));
   const url = `https://costume.yuniruyuni.net/${costume.id}`;
-  const image = `https://costume.yuniruyuni.net/ogp/${costume.id}.png`;
+  const image = `https://costume.yuniruyuni.net/ogp/${costume.id}.webp`;
 
   const html = template
     .replace(
