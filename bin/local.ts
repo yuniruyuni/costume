@@ -5,6 +5,7 @@ Bun.serve({
     if (path === "/") path = "index.html";
     path = decodeURI(path);
     const file = Bun.file(`static/${path}`);
-    return new Response(file);
+    if (await file.exists()) return new Response(file);
+    return new Response(Bun.file("static/index.html"));
   },
 });

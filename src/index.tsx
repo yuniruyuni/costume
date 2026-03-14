@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { Route, Router } from "wouter";
-import { navigate, useHashLocation } from "wouter/use-hash-location";
+import { navigate } from "wouter/use-browser-location";
 
 import "./index.css";
 
@@ -57,11 +57,17 @@ export function MainScreen() {
   );
 }
 
+// ハッシュURLからパスベースURLへの移行リダイレクト
+if (window.location.hash.startsWith("#/")) {
+  const path = window.location.hash.slice(1);
+  window.history.replaceState(null, "", path);
+}
+
 const root = document.getElementById("root");
 if (root) {
   ReactDOM.createRoot(root).render(
     <React.StrictMode>
-      <Router hook={useHashLocation}>
+      <Router>
         <MainScreen />
       </Router>
     </React.StrictMode>,

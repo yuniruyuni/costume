@@ -59,4 +59,11 @@ const imageConv = new ImageConverter(
   {},
 );
 
-await Promise.all([thumbConv.run(), imageConv.run()]);
+const ogpConv = new ImageConverter(
+  "images/",
+  "static/ogp/",
+  sharp.format.png,
+  { width: 1200, height: 630 },
+);
+
+await Promise.all([thumbConv.run(), imageConv.run(), ogpConv.run()]);
