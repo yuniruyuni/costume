@@ -40,10 +40,8 @@ describe("MainScreen (index) のルーティング", () => {
         <MainScreen />
       </Router>,
     );
-    // Detail コンポーネントはタイトルに "ゆにコス: {costume.name}" を表示しているので、それを確認
-    expect(
-      screen.getByText(`ゆにコス: ${costumes[0].name}`),
-    ).toBeInTheDocument();
+    // Detail コンポーネントはタイトルに "ゆにコス: {costume.name}" を設定しているので、document.titleで確認
+    expect(document.title).toBe(`ゆにコス: ${costumes[0].name}`);
     // また、Detail 内の画像が costume.image を src に持つことも確認
     expect(screen.getByRole("img", { name: costumes[0].name })).toHaveAttribute(
       "src",

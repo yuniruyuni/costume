@@ -1,8 +1,8 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.1/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.7/schema.json",
   "vcs": { "clientKind": "git", "enabled": true, "useIgnoreFile": true },
-  "files": { "ignore": ["bun.lockb", "static/**/*.js"] },
-  "organizeImports": { "enabled": true },
+  "files": { "includes": ["**", "!**/bun.lockb", "!**/static/**/*.js"] },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
