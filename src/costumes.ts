@@ -357,6 +357,15 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     comment: "狩人な感じのアバター衣装...! オクトパストラベラーでハンイットさん主人公に選んだときにいい感じのハンター衣装ないかなーって探して検索にひっかかりに一発で「これ！いい！！」ってなりました✨️",
     vrchat_only: false,
   },
+  {
+    id: "lilie",
+    name: "Lilie(リリエ)",
+    author: "こここや",
+    booth: "https://kokokoya.booth.pm/items/2908525",
+    comment:
+      "錬金術師なVRCアバターのリリエちゃんから衣装をお借りしました！つまり本来はアバター衣装というわけじゃなくてアバターそのものなのですが、他のアバターの改変に利用してもよいという規約になっていたので、アトリエシリーズを遊ぶ時にすごくぴったりでどうしてもお借りしたく……！ 衣装だけじゃなくてアバター自体も非常にクオリティが高いのでおすすめできるかも。",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
