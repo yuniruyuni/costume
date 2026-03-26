@@ -1,0 +1,63 @@
+version: 2
+updates:
+  # npm依存関係の更新
+  - package-ecosystem: "bun"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
+    groups:
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
+      testing:
+        patterns:
+          - "@testing-library/*"
+          - "@happy-dom/*"
+          - "bun-bagel"
+      types:
+        patterns:
+          - "@types/*"
+        exclude-patterns:
+          - "@types/react"
+          - "@types/react-dom"
+      build-tools:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/*"
+          - "typescript"
+          - "sharp"
+          - "npm-run-all2"
+      linters:
+        patterns:
+          - "@biomejs/*"
+
+  # GitHub Actionsの更新
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "ci(deps)"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
