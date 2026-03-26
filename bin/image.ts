@@ -5,6 +5,7 @@ import sharp, { type AvailableFormatInfo } from "sharp";
 type ImageConverterOptions = {
   width?: number;
   height?: number;
+  position?: sharp.ResizeOptions["position"];
 };
 
 class ImageConverter {
@@ -63,7 +64,7 @@ const ogpConv = new ImageConverter(
   "images/",
   "static/ogp/",
   sharp.format.webp,
-  { width: 1200, height: 630 },
+  { width: 1200, height: 630, position: sharp.gravity.north },
 );
 
 await Promise.all([thumbConv.run(), imageConv.run(), ogpConv.run()]);
