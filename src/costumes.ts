@@ -29,6 +29,15 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     vrchat_only: false,
   },
   {
+    id: "alice_in_dream_garden",
+    name: "花園の夢のアリス",
+    author: "夢幻のアリス",
+    booth: "https://vrc-dream-alice.booth.pm/items/7999735",
+    comment:
+      "ちょっと色々考えてアバターをアリス風に寄せていきたいなーということでアリス風のアバター衣装を探してみたらありえないほど可愛くて素敵だった衣装です✨️しばらくはこれがデフォルト衣装になるかも。",
+    vrchat_only: false,
+  },
+  {
     id: "dreamy_step",
     name: "Dreamy Step",
     author: "寺井カントリー",
@@ -354,7 +363,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "狩人の装束（オオカミ） / Hunter's outfit (Wolf)",
     author: "META TALIER",
     booth: "https://metatelier.booth.pm/items/4669916",
-    comment: "狩人な感じのアバター衣装...! オクトパストラベラーでハンイットさん主人公に選んだときにいい感じのハンター衣装ないかなーって探して検索にひっかかりに一発で「これ！いい！！」ってなりました✨️",
+    comment:
+      "狩人な感じのアバター衣装...! オクトパストラベラーでハンイットさん主人公に選んだときにいい感じのハンター衣装ないかなーって探して検索にひっかかりに一発で「これ！いい！！」ってなりました✨️",
     vrchat_only: false,
   },
   {
