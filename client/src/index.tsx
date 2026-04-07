@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { Route, Router } from "wouter";
 import { navigate } from "wouter/use-browser-location";
 
+import "./i18n/config";
 import "./index.css";
 
 import { costumes } from "./costumes";
