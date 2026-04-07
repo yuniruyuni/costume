@@ -1,15 +1,32 @@
-FROM oven/bun:1.3 AS build
-
+FROM oven/bun:1.3.3 AS build-client
 WORKDIR /work
-
-ADD package.json /work
-ADD bun.lock /work
+COPY package.json bun.lock /work/
+COPY client/package.json /work/client/
+COPY server/package.json /work/server/
+COPY e2e/package.json /work/e2e/
 RUN bun install --frozen-lockfile
-
-ADD . /work
+COPY client/ /work/client/
+# 元画像 (`images/`) はリポジトリルート直下に置いておく。
+# client/bin/image.ts は `../images/` を参照するため、ここで /work/images/ にコピーする。
+COPY images/ /work/images/
+WORKDIR /work/client
 RUN bun run build
 
-FROM nginx:alpine-slim
+FROM oven/bun:1.3.3 AS build-server
+WORKDIR /work
+COPY package.json bun.lock /work/
+COPY client/package.json /work/client/
+COPY server/package.json /work/server/
+COPY e2e/package.json /work/e2e/
+RUN bun install --frozen-lockfile
+COPY server/ /work/server/
+WORKDIR /work/server
+RUN bun build src/index.ts --compile --outfile /work/dist/server
 
-COPY conf.d/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /work/static/ /usr/share/nginx/html/
+FROM gcr.io/distroless/cc-debian12
+WORKDIR /app
+COPY --from=build-server /work/dist/server /app/server
+COPY --from=build-client /work/client/static/ /app/static/
+ENV STATIC_DIR=./static
+EXPOSE 3000
+CMD ["./server"]
