@@ -1,6 +1,5 @@
 import { afterEach, describe, expect, jest, test } from "bun:test";
-import { fireEvent, render, screen } from "@testing-library/react";
-import { cleanup } from "@testing-library/react";
+import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import type { Costume } from "./costumes";
 import { Detail } from "./detail";
 

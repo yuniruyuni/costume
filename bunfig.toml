@@ -1,5 +1,0 @@
-[test]
-preload = "./base.test.ts"
-coverage = true
-coverageReporter  = ["text", "lcov"]
-coverageDir = "coverage"

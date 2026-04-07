@@ -44,8 +44,10 @@ class ImageConverter {
   }
 }
 
+// 元画像 (`images/`) はリポジトリルート直下に置いておく (生成物の static/ とは別ライフサイクル)。
+// このスクリプトは client ワークスペースから実行されるため、相対パスは ../images/ を指す。
 const thumbConv = new ImageConverter(
-  "images/",
+  "../images/",
   "static/thumbnails/",
   sharp.format.webp,
   {
@@ -54,14 +56,14 @@ const thumbConv = new ImageConverter(
   },
 );
 const imageConv = new ImageConverter(
-  "images/",
+  "../images/",
   "static/images/",
   sharp.format.webp,
   {},
 );
 
 const ogpConv = new ImageConverter(
-  "images/",
+  "../images/",
   "static/ogp/",
   sharp.format.webp,
   { width: 1200, height: 630, position: sharp.gravity.north },
