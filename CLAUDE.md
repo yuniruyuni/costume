@@ -33,7 +33,7 @@ bun run fix:lint      # Biome auto-fix (全ワークスペース)
 ```
 ├── package.json              # ワークスペースルート (name: "costume")
 ├── biome.jsonc               # 共有 Biome 設定
-├── docker-compose.yml        # ローカル動作確認 (single service)
+├── compose.yml               # ローカル動作確認 (single service, docker compose watch 対応)
 ├── Dockerfile                # プロダクション (client build + server compile + distroless)
 ├── cloudrun.yaml             # Cloud Run 単一サービス (port 3000)
 │

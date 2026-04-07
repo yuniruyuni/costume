@@ -1,0 +1,27 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    develop:
+      watch:
+        - action: rebuild
+          path: ./client/src
+        - action: rebuild
+          path: ./client/bin
+        - action: rebuild
+          path: ./server/src
+        - action: rebuild
+          path: ./client/package.json
+        - action: rebuild
+          path: ./server/package.json
+        - action: rebuild
+          path: ./package.json
+        - action: rebuild
+          path: ./bun.lock
+        - action: rebuild
+          path: ./images
