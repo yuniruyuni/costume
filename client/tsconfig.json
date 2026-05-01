@@ -9,7 +9,6 @@
     "types": ["@types/bun"],
 
     /* Alias */
-    "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
     },
@@ -33,6 +32,12 @@
     /* Debugging */
     "sourceMap": true
   },
-  "include": ["src/**/*", "bin/**/*", "test-preload.ts", "matchers.d.ts"],
+  "include": [
+    "src/**/*",
+    "bin/**/*",
+    "test-preload.ts",
+    "matchers.d.ts",
+    "assets.d.ts"
+  ],
   "exclude": ["static/**/*"]
 }

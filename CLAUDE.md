@@ -2,7 +2,9 @@
 
 ## Project Overview
 
-costume.yuniruyuni.net — Virtual TechLead ゆにるユニのコスチュームギャラリー (静的 SPA + SSG + 画像処理パイプライン)。React 19 で実装したギャラリー / 詳細画面と、`client/bin/` の SSG / sharp 画像処理スクリプトで構成され、Hono ベースの極薄 server から静的ファイルとして配信する。
+costume.yuniruyuni.net — Virtual TechLead / VTuber ゆにるユニが通常配信およびVRChat配信で使用する衣装リスト (静的 SPA + SSG + 画像処理パイプライン)。React 19 で実装したギャラリー / 詳細画面と、`client/bin/` の SSG / sharp 画像処理スクリプトで構成され、Hono ベースの極薄 server から静的ファイルとして配信する。
+
+通常配信ではVRM形式のアバター、VRChat配信ではVRChat向けアバターを使用する。VRMとVRChatアバター形式の違いにより、VRChat側のほうが表現力やアバター機能が高いため、一部の衣装は `vrchat_only: true` としてVRChat配信専用扱いにする。
 
 ## Tech Stack
 

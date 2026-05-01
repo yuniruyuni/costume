@@ -1,5 +1,7 @@
 import { defineConfig, devices } from "@playwright/test";
 
+const port = Number(process.env.E2E_PORT ?? 3000);
+
 export default defineConfig({
   testDir: ".",
   fullyParallel: true,
@@ -14,7 +16,7 @@ export default defineConfig({
     "{snapshotDir}/{testFileDir}/{testFileName}-snapshots/{arg}-{projectName}-{platform}{ext}",
 
   use: {
-    baseURL: "http://localhost:3000",
+    baseURL: `http://localhost:${port}`,
     trace: "on-first-retry",
     screenshot: {
       mode: "only-on-failure",
@@ -44,9 +46,8 @@ export default defineConfig({
     // client の static を生成してから server を起動する。
     // server 側の watch:run が STATIC_DIR=../client/static を見るので、
     // ここでは事前に client build を走らせる必要がある。
-    command:
-      "bun run --filter @costume/client build && bun run --filter @costume/server watch:run",
-    port: 3000,
+    command: `bun run --filter @costume/client build && PORT=${port} bun run --filter @costume/server watch:run`,
+    port,
     reuseExistingServer: !process.env.CI,
     timeout: 120 * 1000,
   },

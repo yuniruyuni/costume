@@ -12,8 +12,8 @@
     "fix:lint": "biome check --write ."
   },
   "devDependencies": {
-    "@playwright/test": "^1.58.2",
-    "@types/node": "^25.5.2",
-    "typescript": "^5.9.3"
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "typescript": "^6.0.3"
   }
 }
