@@ -1,4 +1,4 @@
-FROM oven/bun:1.3.3 AS build-client
+FROM oven/bun:1.3.14 AS build-client
 WORKDIR /work
 COPY package.json bun.lock /work/
 COPY client/package.json /work/client/
@@ -12,7 +12,7 @@ COPY images/ /work/images/
 WORKDIR /work/client
 RUN bun run build
 
-FROM oven/bun:1.3.3 AS build-server
+FROM oven/bun:1.3.14 AS build-server
 WORKDIR /work
 COPY package.json bun.lock /work/
 COPY client/package.json /work/client/
