@@ -1,6 +1,6 @@
 import { clsx } from "clsx";
 import type React from "react";
-import { useKey } from "react-use";
+import { useEffect } from "react";
 import type { Costume } from "./costumes";
 
 const copyToClipboard = async (text: string) => {
@@ -103,9 +103,16 @@ export const Detail: React.FC<DetailProps> = ({
   onNext,
   onPrevious,
 }) => {
-  useKey("Escape", onClose, {}, [onClose]);
-  useKey("ArrowRight", onNext, {}, [onNext]);
-  useKey("ArrowLeft", onPrevious, {}, [onPrevious]);
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+      if (event.key === "ArrowRight") onNext();
+      if (event.key === "ArrowLeft") onPrevious();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [onClose, onNext, onPrevious]);
 
   return (
     <div
