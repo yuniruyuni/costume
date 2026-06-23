@@ -15,8 +15,8 @@
     "watch:test": "bun run --filter '*' --parallel watch:test",
     "watch:type": "bun run --filter '*' --parallel watch:type"
   },
-	"devDependencies": {
-		"@biomejs/biome": "2.4.16"
-	},
-	"trustedDependencies": ["@biomejs/biome"]
+  "devDependencies": {
+    "@biomejs/biome": "2.4.16"
+  },
+  "trustedDependencies": ["@biomejs/biome"]
 }
