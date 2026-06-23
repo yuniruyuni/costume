@@ -376,6 +376,15 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
       "錬金術師なVRCアバターのリリエちゃんから衣装をお借りしました！つまり本来はアバター衣装というわけじゃなくてアバターそのものなのですが、他のアバターの改変に利用してもよいという規約になっていたので、アトリエシリーズを遊ぶ時にすごくぴったりでどうしてもお借りしたく……！ 衣装だけじゃなくてアバター自体も非常にクオリティが高いのでおすすめできるかも。",
     vrchat_only: false,
   },
+  {
+    id: "eto01",
+    name: "干支衣-辰-",
+    author: "御桜",
+    booth: "https://booth.pm/ja/items/5396008",
+    comment:
+      "辰の干支モチーフな衣装です〜。天女さんっぽい感じでかわよい〜。キラキラ半透明の羽衣が素敵です〜✨️前から買ってたんだけど配信で使う上でこの半透明が使えなかったのをwarudoに移行したことで使えるようになったので改めてアタッチしてみた次第。",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
