@@ -1,11 +1,11 @@
 import { mkdir } from "node:fs/promises";
 import path from "node:path";
-import sharp, { type AvailableFormatInfo } from "sharp";
+import sharp, { type AvailableFormatInfo, type ResizeOptions } from "sharp";
 
 type ImageConverterOptions = {
   width?: number;
   height?: number;
-  position?: sharp.ResizeOptions["position"];
+  position?: ResizeOptions["position"];
 };
 
 class ImageConverter {
