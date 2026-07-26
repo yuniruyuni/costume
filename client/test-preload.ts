@@ -1,15 +1,15 @@
-// IMPORTANT: GlobalRegistrator.register() must be called BEFORE any module
-// that loads @testing-library/dom (e.g. @testing-library/react) is imported.
-// @testing-library/dom's screen.js is CJS and reads `typeof document` at
-// require time, so it captures the throwing fallback if document is undefined.
-// This preload file therefore avoids importing @testing-library/react.
+import { expect } from "bun:test";
 import { GlobalRegistrator } from "@happy-dom/global-registrator";
+import { disableRealRequests } from "bun-bagel";
 
+// IMPORTANT: GlobalRegistrator.register() must run before any module that loads
+// @testing-library/dom. jest-dom v7's matchers load it, so they must be imported
+// dynamically after the global document has been installed.
 GlobalRegistrator.register();
 
-import { expect } from "bun:test";
-import * as matchers from "@testing-library/jest-dom/matchers";
-import { disableRealRequests } from "bun-bagel";
+const { default: _default, ...matchers } = await import(
+  "@testing-library/jest-dom/matchers"
+);
 
 disableRealRequests();
 expect.extend(matchers);
