@@ -390,7 +390,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "雲住まいの童話天使",
     author: "みさくらやさん",
     booth: "https://booth.pm/ja/items/8201877",
-    comment: "ふわふわでかわいい衣装です〜。雲の中に住むってどんな感じだろう・・・？水滴がめっちゃつきそう……。",
+    comment:
+      "ふわふわでかわいい衣装です〜。雲の中に住むってどんな感じだろう・・・？水滴がめっちゃつきそう……。",
     vrchat_only: false,
   },
   {
@@ -406,23 +407,26 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "天竜楽土",
     author: "もちづき",
     booth: "https://booth.pm/ja/items/5295702",
-    comment: "天女さんみたいな素敵な衣装です〜。将棋を指すのにこの辺の衣装がほしいなーって思って探して見つけたのですが結構お気に入り。",
+    comment:
+      "天女さんみたいな素敵な衣装です〜。将棋を指すのにこの辺の衣装がほしいなーって思って探して見つけたのですが結構お気に入り。",
     vrchat_only: false,
   },
-    {
-      id: "summer_nostalgic",
-      name: "SummerNostalgic",
-      author: "OKITUNELAND",
-      booth: "https://booth.pm/ja/items/7527588",
-      comment: "狐なモチーフの和ドレスみたいな感じの衣装です〜。これも将棋を指すのにこの辺の衣装がほしいなーって思って探して見つけてかわいいなーと衝動買い……。",
-      vrchat_only: false,
-    },
+  {
+    id: "summer_nostalgic",
+    name: "SummerNostalgic",
+    author: "OKITUNELAND",
+    booth: "https://booth.pm/ja/items/7527588",
+    comment:
+      "狐なモチーフの和ドレスみたいな感じの衣装です〜。これも将棋を指すのにこの辺の衣装がほしいなーって思って探して見つけてかわいいなーと衝動買い……。",
+    vrchat_only: false,
+  },
   {
     id: "lignis",
     name: "Lignis",
     author: "©新しめのフォルダ",
     booth: "https://booth.pm/ja/items/8182803",
-    comment: "かわいいのでつい衝動買いしてしまった衣装。普段使いしてるDreamyStepとちょっと被っちゃったかもだけどかわいいのでよし✨️",
+    comment:
+      "かわいいのでつい衝動買いしてしまった衣装。普段使いしてるDreamyStepとちょっと被っちゃったかもだけどかわいいのでよし✨️",
     vrchat_only: false,
   },
   {
@@ -430,7 +434,8 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "Mary Dress",
     author: "©#ぬんぬん製作所",
     booth: "https://booth.pm/ja/items/3984753",
-    comment: "素敵なふりふりドレスです！ふりふりドレス！ロマサガ３でモニカを主人公に選択した関係でドレスをアタッチしようと思った時に使い始めた衣装その１です。",
+    comment:
+      "素敵なふりふりドレスです！ふりふりドレス！ロマサガ３でモニカを主人公に選択した関係でドレスをアタッチしようと思った時に使い始めた衣装その１です。",
     vrchat_only: false,
   },
   {
@@ -438,9 +443,10 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
     name: "U dress",
     author: "めいこ",
     booth: "https://booth.pm/ja/items/6206426",
-    comment: "これまた素敵なふりふりドレスです！シルエットが素敵です✨️ Mary Dressと同様にロマサガ３でモニカを主人公に選択した関係でドレスをアタッチしようと思った時に使い始めた衣装なのですが、どちらも素敵なのでどっちにしようか悩んだ結果両方きてしまった……！という",
+    comment:
+      "これまた素敵なふりふりドレスです！シルエットが素敵です✨️ Mary Dressと同様にロマサガ３でモニカを主人公に選択した関係でドレスをアタッチしようと思った時に使い始めた衣装なのですが、どちらも素敵なのでどっちにしようか悩んだ結果両方きてしまった……！という",
     vrchat_only: false,
-  }
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
