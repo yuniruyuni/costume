@@ -447,6 +447,15 @@ export const rawCostumes: Omit<Costume, "thumbnail" | "image">[] = [
       "これまた素敵なふりふりドレスです！シルエットが素敵です✨️ Mary Dressと同様にロマサガ３でモニカを主人公に選択した関係でドレスをアタッチしようと思った時に使い始めた衣装なのですが、どちらも素敵なのでどっちにしようか悩んだ結果両方きてしまった……！という",
     vrchat_only: false,
   },
+  {
+    id: "new_office_bunny_girl",
+    name: "NEW Office bunny girl",
+    author: "ROSI atelier",
+    booth: "https://booth.pm/ja/items/7364633",
+    comment:
+      "8月10日バニーの日ということ探して着てみたバニーガールなお洋服です〜！ふともものあたりがだいぶせくしー・・・",
+    vrchat_only: false,
+  },
 ];
 
 export const costumes = rawCostumes.map((costume) => ({
