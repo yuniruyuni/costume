@@ -45,7 +45,7 @@
     "bun-bagel": "^1.2.0",
     "happy-dom": "^20.10.1",
     "npm-run-all2": "^9.0.2",
-    "sharp": "^0.35.0",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4.2.4",
     "typescript": "^7.0.0"
   }
