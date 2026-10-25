@@ -76,3 +76,12 @@ exposure, so prefer a forward fix if a provider rejects identity responses.
 - https://github.com/oven-sh/bun/blob/bun-v1.4.3/scripts/build/deps/brotli.ts
 - https://github.com/google/brotli/commit/0ed4268a4401abcb44720963
 - https://bun.com/docs/runtime/networking/fetch
+
+## Additional audit corrections — 2026-10-25
+
+Happy DOM and its global registrator are pinned to 21.0.4 for GHSA-834v-8h66-3h79. These are test/development dependencies.
+
+Only these package records and their direct manifest pins change in bun.lock.
+Other resolved dependencies, application source, schemas and the fetch guard are unchanged.
+
+- https://github.com/capricorn86/happy-dom/releases/tag/v21.0.4
