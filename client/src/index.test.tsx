@@ -1,18 +1,35 @@
 import { afterEach, describe, expect, test } from "bun:test";
 import { cleanup, render, screen } from "@testing-library/react";
-import { useState } from "react";
+import {
+  createContext,
+  type PropsWithChildren,
+  useContext,
+  useState,
+} from "react";
 import { Router } from "wouter";
 import { MainScreen } from "./";
 import { costumes } from "./costumes";
 
 afterEach(cleanup);
 
-// テスト用：初期ルートを指定できるフェイクロケーションフックのファクトリ関数
-function createFakeLocation(initial: string) {
-  return function useFakeLocation() {
-    const [location, setLocation] = useState(initial);
-    return [location, setLocation] as [string, (l: string) => void];
-  };
+// テストごとの初期ルートを、同じフック定義へ Context で渡す。
+const InitialLocation = createContext("/");
+
+function useFakeLocation() {
+  const initial = useContext(InitialLocation);
+  const [location, setLocation] = useState(initial);
+  return [location, setLocation] as [string, (l: string) => void];
+}
+
+function TestRouter({
+  initial,
+  children,
+}: PropsWithChildren<{ initial: string }>) {
+  return (
+    <InitialLocation.Provider value={initial}>
+      <Router hook={useFakeLocation}>{children}</Router>
+    </InitialLocation.Provider>
+  );
 }
 
 // ─────────────────────────────────────────────
@@ -20,9 +37,9 @@ function createFakeLocation(initial: string) {
 describe("MainScreen (index) のルーティング", () => {
   test("ルートが '/' の場合、Gallery がレンダリングされる", () => {
     render(
-      <Router hook={createFakeLocation("/")}>
+      <TestRouter initial="/">
         <MainScreen />
-      </Router>,
+      </TestRouter>,
     );
     // ヘッダーに表示される "yuniruyuni.net" のリンクが表示されること
     expect(screen.getByText("yuniruyuni.net")).toBeInTheDocument();
@@ -36,9 +53,9 @@ describe("MainScreen (index) のルーティング", () => {
   test("有効な id の場合、Detail がレンダリングされる", () => {
     const validId = costumes[0].id;
     render(
-      <Router hook={createFakeLocation(`/${validId}`)}>
+      <TestRouter initial={`/${validId}`}>
         <MainScreen />
-      </Router>,
+      </TestRouter>,
     );
     // Detail コンポーネントはタイトルに "ゆにコス: {costume.name}" を設定しているので、document.titleで確認
     expect(document.title).toBe(`ゆにコス: ${costumes[0].name}`);
@@ -51,9 +68,9 @@ describe("MainScreen (index) のルーティング", () => {
 
   test("無効な id の場合、'Not found' がレンダリングされる", () => {
     render(
-      <Router hook={createFakeLocation("/nonexistent")}>
+      <TestRouter initial="/nonexistent">
         <MainScreen />
-      </Router>,
+      </TestRouter>,
     );
     expect(screen.getByText("Not found")).toBeInTheDocument();
   });
