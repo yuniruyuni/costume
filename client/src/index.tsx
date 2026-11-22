@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { Route, Router } from "wouter";
 import { navigate } from "wouter/use-browser-location";
+import { trackDailyUse } from "./daily-usage";
 
 import "./i18n/config";
 import "./index.css";
@@ -74,3 +75,5 @@ if (root) {
     </React.StrictMode>,
   );
 }
+
+trackDailyUse();
